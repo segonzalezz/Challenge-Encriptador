@@ -9,6 +9,6 @@ Del Challenge del encriptador de texto
 ### Imagenes
 <div align="center"> 
   
-![Alter](img/challenge.PNG)
+![Alter](img/challenge.png)
 
 </div>
