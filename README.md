@@ -1,10 +1,8 @@
 # Challenge
-En este repositorio se encuentran los archivos:
+En este repositorio se encuentran los archivos, del Challenge del encriptador de texto:
 - Html
 - Css
 - JavaScript
-  
-Del Challenge del encriptador de texto
 
 ### Imagenes
 <div align="center"> 
