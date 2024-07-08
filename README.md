@@ -5,3 +5,10 @@ En este repositorio se encuentran los archivos:
 - JavaScript
   
 Del Challenge del encriptador de texto
+
+### Imagenes
+<div align="center"> 
+  
+![Alter](img/challenge.PNG)
+
+</div>
