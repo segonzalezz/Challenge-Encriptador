@@ -35,4 +35,4 @@ Claramente se ve que la palabra se desencripta, pero no se encuentran las letras
 
 </div>
 
-Por ultimo se va hacer la muestra de 
+Despues de esto se realizo unas validaciones para que entrará solamente las paralabras tienen más de dos caracteres:
