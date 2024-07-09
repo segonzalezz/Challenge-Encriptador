@@ -13,11 +13,11 @@
 <main>
     <section class="section_1">
         <div class="contenedor_izquierdo">
-            <textarea placeholder="Ingrese el texto aquí:" class="texto_area"></textarea>
+            <textarea placeholder="Ingrese el texto aquí:" class="texto_area" id="textarea"></textarea>
         </div>
         <div class="botones">
-            <input type="button" class="btn_encriptar" value="Encriptar">
-            <input type="button" class="btn_desencriptar" value="Desencriptar">
+            <input type="button" class="btn_encriptar" value="Encriptar" id="btn_Encriptar">
+            <input type="button" class="btn_desencriptar" value="Desencriptar" id="btn_Desencriptar">
         </div>
     </section>
     <section class="section_2">
@@ -31,8 +31,11 @@
         <div class="contenedor_copiar">
             <input type="button" class="btn_copiar" value="Copiar">
         </div>
+        <div class="contenedor_resultado">
+            <p class="texto_resultado"></p>
+        </div>
     </section>
 </main>
-
+<script src="script.js"></script>
 </body>
 </html>

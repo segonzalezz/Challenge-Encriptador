@@ -150,3 +150,22 @@ main{
     top: 350px;
     right: 8px;
 }
+
+.ocultar{
+    display: none;
+}
+
+.contenedor_resultado{
+    position: absolute;
+    top: 18px;
+    width: 340px;
+    height: 450px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+.contenedor_resultado p{
+    color: #495057;
+    font-size: 25px;
+}
