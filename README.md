@@ -42,3 +42,18 @@ const textarea = document.getElementById("textarea")
 const btnEncriptar = document.getElementById("btn_Encriptar")
 var resultado = document.querySelector(".texto_resultado")
 ```
+Luego de esto editamos el evento del boton encriptar de esta forma:
+- Evento boton Encriptar:
+```javascript
+document.getElementById('btn_Encriptar').addEventListener('click', function() {
+    if(textarea.value.trim().length >=2){
+        btnEncriptar.disable = true;
+        ocultar_contenedor();
+        var texto = obtener_texto();
+        resultado.textContent = encriptar_Texto(texto);
+    }else{
+        btnEncriptar.disable = false;
+        mostrarMensaje("Ingrese por favor la palabra");
+    }
+});
+```
