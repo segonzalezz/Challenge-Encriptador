@@ -36,7 +36,7 @@ Claramente se ve que la palabra se desencripta, pero no se encuentran las letras
 </div>
 
 Despues de esto se realizo unas validaciones para que  solamente entrará las paralabras tienen más de dos caracteres:
--Variables utilizadas:
+- Variables utilizadas:
 ```javascript
 
 ```
