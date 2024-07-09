@@ -38,5 +38,6 @@ Claramente se ve que la palabra se desencripta, pero no se encuentran las letras
 Despues de esto se realizo unas validaciones para que  solamente entrará las paralabras tienen más de dos caracteres:
 - Variables utilizadas:
 ```javascript
-
+const textarea = document.getElementById("textarea")
+const btnEncriptar = documento.getElementById("btn_Encriptar")
 ```
