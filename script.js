@@ -19,58 +19,278 @@ function encriptar_Texto(mensaje) {
     var textoFinal = "";
 
     for(var i = 0; i < texto.length; i++) {
-        switch(texto[i]) {
-            case "a":
-                textoFinal += "@";
+        var caracter = texto[i];
+        switch(caracter) {
+            case 'a':
+                textoFinal += "1 ";
                 break;
-            case "e":
-                textoFinal += "3";
+            case 'b':
+                textoFinal += "2 ";
                 break;
-            case "i":
-                textoFinal += "!";
+            case 'c':
+                textoFinal += "3 ";
                 break;
-            case "o":
-                textoFinal += "*";
+            case 'd':
+                textoFinal += "4 ";
                 break;
-            case "u":
-                textoFinal += "#";
+            case 'e':
+                textoFinal += "5 ";
+                break;
+            case 'f':
+                textoFinal += "6 ";
+                break;
+            case 'g':
+                textoFinal += "7 ";
+                break;
+            case 'h':
+                textoFinal += "8 ";
+                break;
+            case 'i':
+                textoFinal += "9 ";
+                break;
+            case 'j':
+                textoFinal += "10 ";
+                break;
+            case 'k':
+                textoFinal += "11 ";
+                break;
+            case 'l':
+                textoFinal += "12 ";
+                break;
+            case 'm':
+                textoFinal += "13 ";
+                break;
+            case 'n':
+                textoFinal += "14 ";
+                break;
+            case 'o':
+                textoFinal += "15 ";
+                break;
+            case 'p':
+                textoFinal += "16 ";
+                break;
+            case 'q':
+                textoFinal += "17 ";
+                break;
+            case 'r':
+                textoFinal += "18 ";
+                break;
+            case 's':
+                textoFinal += "19 ";
+                break;
+            case 't':
+                textoFinal += "20 ";
+                break;
+            case 'u':
+                textoFinal += "21 ";
+                break;
+            case 'v':
+                textoFinal += "22 ";
+                break;
+            case 'w':
+                textoFinal += "23 ";
+                break;
+            case 'x':
+                textoFinal += "24 ";
+                break;
+            case 'y':
+                textoFinal += "25 ";
+                break;
+            case 'z':
+                textoFinal += "26 ";
+                break;
+            case ' ':
+                textoFinal += "27 ";
+                break;
+            case ',':
+                textoFinal += "28 ";
+                break;
+            case '.':
+                textoFinal += "29 ";
+                break;
+            case '!':
+                textoFinal += "30 ";
+                break;
+            case '?':
+                textoFinal += "31 ";
+                break;
+            case '0':
+                textoFinal += "32 ";
+                break;
+            case '1':
+                textoFinal += "33 ";
+                break;
+            case '2':
+                textoFinal += "34 ";
+                break;
+            case '3':
+                textoFinal += "35 ";
+                break;
+            case '4':
+                textoFinal += "36 ";
+                break;
+            case '5':
+                textoFinal += "37 ";
+                break;
+            case '6':
+                textoFinal += "38 ";
+                break;
+            case '7':
+                textoFinal += "39 ";
+                break;
+            case '8':
+                textoFinal += "40 ";
+                break;
+            case '9':
+                textoFinal += "41";
                 break;
             default:
-                textoFinal += texto[i];
+                textoFinal += caracter + " "; 
                 break;
         }
     }
-    return textoFinal;
+    return textoFinal.trim(); 
 }
 
 function desencriptar_Texto(textoEncriptado) {
-    var texto = textoEncriptado;
+    var numeros = textoEncriptado.split(" "); 
     var textoFinal = "";
 
-    for(var i = 0; i < texto.length; i++) {
-        switch(texto[i]) {
-            case "@":
+    for(var i = 0; i < numeros.length; i++) {
+        var numero = parseInt(numeros[i], 10); 
+
+        switch(numero) {
+            case 1:
                 textoFinal += "a";
                 break;
-            case "3":
+            case 2:
+                textoFinal += "b";
+                break;
+            case 3:
+                textoFinal += "c";
+                break;
+            case 4:
+                textoFinal += "d";
+                break;
+            case 5:
                 textoFinal += "e";
                 break;
-            case "!":
+            case 6:
+                textoFinal += "f";
+                break;
+            case 7:
+                textoFinal += "g";
+                break;
+            case 8:
+                textoFinal += "h";
+                break;
+            case 9:
                 textoFinal += "i";
                 break;
-            case "*":
+            case 10:
+                textoFinal += "j";
+                break;
+            case 11:
+                textoFinal += "k";
+                break;
+            case 12:
+                textoFinal += "l";
+                break;
+            case 13:
+                textoFinal += "m";
+                break;
+            case 14:
+                textoFinal += "n";
+                break;
+            case 15:
                 textoFinal += "o";
                 break;
-            case "#":
+            case 16:
+                textoFinal += "p";
+                break;
+            case 17:
+                textoFinal += "q";
+                break;
+            case 18:
+                textoFinal += "r";
+                break;
+            case 19:
+                textoFinal += "s";
+                break;
+            case 20:
+                textoFinal += "t";
+                break;
+            case 21:
                 textoFinal += "u";
                 break;
+            case 22:
+                textoFinal += "v";
+                break;
+            case 23:
+                textoFinal += "w";
+                break;
+            case 24:
+                textoFinal += "x";
+                break;
+            case 25:
+                textoFinal += "y";
+                break;
+            case 26:
+                textoFinal += "z";
+                break;
+            case 27:
+                textoFinal += " ";
+                break;
+            case 28:
+                textoFinal += ",";
+                break;
+            case 29:
+                textoFinal += ".";
+                break;
+            case 30:
+                textoFinal += "!";
+                break;
+            case 31:
+                textoFinal += "?";
+                break;
+            case 32:
+                textoFinal += "0";
+                break;
+            case 33:
+                textoFinal += "1";
+                break;
+            case 34:
+                textoFinal += "2";
+                break;
+            case 35:
+                textoFinal += "3";
+                break;
+            case 36:
+                textoFinal += "4";
+                break;
+            case 37:
+                textoFinal += "5";
+                break;
+            case 38:
+                textoFinal += "6";
+                break;
+            case 39:
+                textoFinal += "7";
+                break;
+            case 40:
+                textoFinal += "8";
+                break;
+            case 41:
+                textoFinal += "9";
+                break;
             default:
-                textoFinal += texto[i];
+                textoFinal += numeros[i] + " "; 
                 break;
         }
     }
     return textoFinal;
 }
+
 
 document.getElementById('btn_Encriptar').addEventListener('click', function() {
     ocultar_contenedor();
