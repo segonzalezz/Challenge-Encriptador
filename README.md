@@ -12,14 +12,14 @@ En este repositorio se encuentran los archivos del Challenge del encriptador de 
 
 </div>
 
-- Prueba de cuando se ingresa una palabra y se da clic al boton encriptar:
+- Prueba de cuando se ingresa una palabra y se da click al boton encriptar:
 <div alig="center">
   
 ![Alter](img/primero.png)
 
 </div>
 
-- Prueba despues de que se encripto la palabra y se da clic al boton desencriptar:
+- Prueba despues de que se encripto la palabra y se da click al boton desencriptar:
 <div alig="center">
   
 ![Alter](img/segundo.png)
