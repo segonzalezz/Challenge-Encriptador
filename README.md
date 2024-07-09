@@ -57,3 +57,9 @@ document.getElementById('btn_Encriptar').addEventListener('click', function() {
     }
 });
 ```
+Por lo tanto si no ingreso una palabra con más de dos caracteres, aparecera esto:
+<div alig="center">
+  
+![Alter](img/quinto.png)
+
+</div>
