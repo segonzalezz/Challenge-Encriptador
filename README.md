@@ -26,4 +26,4 @@ En este repositorio se encuentran los archivos, del Challenge del encriptador de
 
 </div>
 
-Claramente se ve que la palabra se desencripta, pero no se tiene encuenta la letra mayuscula ya que se utiliza una funcion lowercase
+Claramente se ve que la palabra se desencripta, pero no se encuentran las letras mayusculas ya que se utiliza una funcion lowercase
