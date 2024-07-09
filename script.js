@@ -303,3 +303,32 @@ document.getElementById('btn_Desencriptar').addEventListener('click', function()
     var texto_Encriptado = resultado.textContent;
     resultado.textContent = desencriptar_Texto(texto_Encriptado);
 });
+
+document.getElementById('btn_Copiar').addEventListener('click', function() {
+    var texto_Encriptado = resultado.textContent;
+    var texto_Desencriptado = desencriptar_Texto(texto_Encriptado);
+    var varTemporal = document.createElement('input');  
+    varTemporal.value = texto_Desencriptado;
+    document.body.appendChild(varTemporal);
+    varTemporal.select();
+    document.execCommand("copy");
+    document.body.removeChild(varTemporal);
+    mostrarMensaje("Texto copiado en el portapapeles");
+});
+
+function mostrarMensaje(mensaje) {
+    var mensajeElemento = document.createElement('div');
+    mensajeElemento.textContent = mensaje;
+    mensajeElemento.style.position = 'absolute';
+    mensajeElemento.style.bottom = '150px';
+    mensajeElemento.style.right = '136px';
+    mensajeElemento.style.padding = '10px';
+    mensajeElemento.style.backgroundColor = 'lavender';
+    mensajeElemento.style.border = '1px solid purple';
+    mensajeElemento.style.borderRadius = '5px';
+    document.body.appendChild(mensajeElemento);
+    
+    setTimeout(function() {
+        document.body.removeChild(mensajeElemento);
+    }, 3000);
+}
