@@ -1,4 +1,4 @@
-# Challenge
+# Challenge Encriptador
 En este repositorio se encuentran los archivos, del Challenge del encriptador de texto:
 - Html
 - Css
