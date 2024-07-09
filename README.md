@@ -39,5 +39,6 @@ Despues de esto se realizo unas validaciones para que  solamente entrará las pa
 - Variables utilizadas:
 ```javascript
 const textarea = document.getElementById("textarea")
-const btnEncriptar = documento.getElementById("btn_Encriptar")
+const btnEncriptar = document.getElementById("btn_Encriptar")
+var resultado = document.querySelector(".texto_resultado")
 ```
