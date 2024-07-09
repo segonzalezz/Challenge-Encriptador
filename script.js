@@ -1,4 +1,5 @@
-
+const textarea = document.getElementById("textarea")
+const btnEncriptar = document.getElementById("btn_Encriptar")
 var icono = document.querySelector(".contenedor_icono")
 var contenedor = document.querySelector(".contenedor_parrafo")
 var resultado =  document.querySelector(".texto_resultado")
@@ -291,11 +292,16 @@ function desencriptar_Texto(textoEncriptado) {
     return textoFinal;
 }
 
-
 document.getElementById('btn_Encriptar').addEventListener('click', function() {
-    ocultar_contenedor();
-    var texto = obtener_texto();
-    resultado.textContent = encriptar_Texto(texto);
+    if(textarea.value.trim().length >=2){
+        btnEncriptar.disable = true;
+        ocultar_contenedor();
+        var texto = obtener_texto();
+        resultado.textContent = encriptar_Texto(texto);
+    }else{
+        btnEncriptar.disable = false;
+        mostrarMensaje("Ingrese por favor la palabra");
+    }
 });
 
 document.getElementById('btn_Desencriptar').addEventListener('click', function() {
@@ -314,6 +320,7 @@ document.getElementById('btn_Copiar').addEventListener('click', function() {
     document.execCommand("copy");
     document.body.removeChild(varTemporal);
     mostrarMensaje("Texto copiado en el portapapeles");
+    resultado.innerHTML = " ";
 });
 
 function mostrarMensaje(mensaje) {
